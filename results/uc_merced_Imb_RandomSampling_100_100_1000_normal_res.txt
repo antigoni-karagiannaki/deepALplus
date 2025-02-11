@@ -1,0 +1,19 @@
+dataset: uc_merced_Imb
+AL strategy: RandomSampling
+number of labeled pool: 100
+number of unlabeled pool: 1304
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+Size of training set is 100, accuracy is 0.2833.
+Size of training set is 200, accuracy is 0.4421.
+Size of training set is 300, accuracy is 0.5302.
+Size of training set is 400, accuracy is 0.5587.
+Size of training set is 500, accuracy is 0.6143.
+Size of training set is 600, accuracy is 0.6786.
+Size of training set is 700, accuracy is 0.7024.
+Size of training set is 800, accuracy is 0.727.
+Size of training set is 900, accuracy is 0.6889.
+Size of training set is 1000, accuracy is 0.7103.
+Size of training set is 1100, accuracy is 0.7452.

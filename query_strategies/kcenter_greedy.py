@@ -8,6 +8,11 @@ class KCenterGreedy(Strategy):
         super(KCenterGreedy, self).__init__(dataset, net, args_input, args_task)
 
     def query(self, n):
+        unlabeled_indices = np.where(self.dataset.labeled_idxs == 0)[0]
+        
+        if n > len(unlabeled_indices):
+            n = min(40, len(unlabeled_indices))  # Ensure we don't query more than available
+        
         labeled_idxs, train_data = self.dataset.get_train_data()
         embeddings = self.get_embeddings(train_data)
         embeddings = embeddings.numpy()

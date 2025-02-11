@@ -1,8 +1,8 @@
 from torchvision import transforms
-from handlers import MNIST_Handler, SVHN_Handler, CIFAR10_Handler, openml_Handler, MNIST_Handler_joint, SVHN_Handler_joint, CIFAR10_Handler_joint
+from handlers import MNIST_Handler, SVHN_Handler, CIFAR10_Handler, UC_Merced_Handler, UC_Merced_Imb_Handler, openml_Handler, MNIST_Handler_joint, SVHN_Handler_joint, CIFAR10_Handler_joint
 from data import get_MNIST, get_FashionMNIST, get_EMNIST, get_SVHN, get_CIFAR10, get_CIFAR10_imb, get_CIFAR100,  \
-								get_TinyImageNet, get_openml, get_BreakHis, get_PneumoniaMNIST, get_waterbirds
-from nets import Net, MNIST_Net, CIFAR10_Net, openml_Net, PneumoniaMNIST_Net, waterbirds_Net, get_net_vae
+								get_TinyImageNet, get_openml, get_BreakHis, get_PneumoniaMNIST, get_waterbirds, get_UcMerced,get_UcMerced_2, get_UCMerced_w_imbalance, get_UcMerced_Imbalanced_2
+from nets import Net, MNIST_Net, CIFAR10_Net, openml_Net, PneumoniaMNIST_Net, waterbirds_Net, ucmerced_Net, get_net_vae
 from nets_lossprediction import Net_LPL, MNIST_Net_LPL, CIFAR10_Net_LPL, PneumoniaMNIST_Net_LPL, waterbirds_Net_LPL, get_lossnet
 from nets_waal import Net_WAAL, MNIST_Net_WAAL, CIFAR10_Net_WAAL, waterbirds_Net_WAAL, CLF_WAAL, Discriminator
 from query_strategies import RandomSampling, LeastConfidence, MarginSampling, EntropySampling, \
@@ -50,6 +50,10 @@ def get_handler(name):
 		return CIFAR10_Handler
 	elif name == 'waterbirds_pretrain':
 		return CIFAR10_Handler
+	elif name == 'uc_merced':
+		return UC_Merced_Handler
+	elif name == 'uc_merced_Imb':
+		return UC_Merced_Handler
 	else: 
 		raise NotImplementedError
 
@@ -81,6 +85,10 @@ def get_handler_joint(name):
 	elif name == 'waterbirds':
 		return CIFAR10_Handler_joint
 	elif name == 'waterbirds_pretrain':
+		return CIFAR10_Handler_joint
+	elif name == 'uc_merced':
+		return CIFAR10_Handler_joint
+	elif name == 'uc_merced_Imb':
 		return CIFAR10_Handler_joint
 	else: 
 		raise NotImplementedError
@@ -114,6 +122,22 @@ def get_dataset(name, args_task):
 		return get_waterbirds(get_handler(name), args_task)
 	elif name == 'waterbirds_pretrain':
 		return get_waterbirds(get_handler(name), args_task)
+	elif name == 'uc_merced':
+		return get_UcMerced_2(get_handler(name), args_task)
+	elif name == 'uc_merced_Imb':
+		# [ 1ST TRY ] imbalanced data - ratios
+		# Fixed Ratio Split ( Step Imbalance )
+		ratios = {}
+
+		for cls in range(21):
+			if cls < 10:
+				ratios[cls] = 1.0
+			elif cls < 15:
+				ratios[cls] = 0.8
+			else:
+				ratios[cls] = 0.6
+		print(ratios)	
+		return get_UcMerced_Imbalanced_2(get_handler(name), args_task, imbalance_ratios=ratios)
 	else:
 		raise NotImplementedError
 
@@ -148,6 +172,10 @@ def get_net(name, args_task, device):
 		return Net(waterbirds_Net, args_task, device)
 	elif name == 'waterbirds_pretrain':
 		return Net(waterbirds_Net, args_task, device)
+	elif name == 'uc_merced':
+		return Net(ucmerced_Net, args_task, device)
+	elif name == 'uc_merced_Imb':
+		return Net(ucmerced_Net, args_task, device)
 	else:
 		raise NotImplementedError
 
@@ -181,6 +209,10 @@ def get_net_lpl(name, args_task, device):
 		return Net_LPL(waterbirds_Net_LPL, args_task, device, loss_net)
 	elif name == 'waterbirds_pretrain':
 		return Net_LPL(waterbirds_Net_LPL, args_task, device, loss_net)
+	elif name == 'uc_merced':
+		return Net_LPL(CIFAR10_Net_LPL, args_task, device, loss_net)
+	elif name == 'uc_merced_Imb':
+		return Net_LPL(CIFAR10_Net_LPL, args_task, device, loss_net)
 	else:
 		raise NotImplementedError
 
@@ -215,6 +247,10 @@ def get_net_waal(name, args_task, device):
 		return Net_WAAL(waterbirds_Net_WAAL, args_task, device, waterbirds_Net_WAAL, CLF_WAAL, Discriminator, handler_joint)
 	elif name == 'waterbirds_pretrain':
 		return Net_WAAL(waterbirds_Net_WAAL, args_task, device, waterbirds_Net_WAAL, CLF_WAAL, Discriminator, handler_joint)
+	elif name == 'uc_merced':
+		return Net_WAAL(CIFAR10_Net_WAAL, args_task, device, CIFAR10_Net_WAAL, CLF_WAAL, Discriminator, handler_joint)
+	elif name == 'uc_merced_Imb':
+		return Net_WAAL(CIFAR10_Net_WAAL, args_task, device, CIFAR10_Net_WAAL, CLF_WAAL, Discriminator, handler_joint)
 	else:
 		raise NotImplementedError	
 #params

@@ -1,0 +1,13 @@
+dataset: uc_merced
+AL strategy: BALDDropout
+number of labeled pool: 100
+number of unlabeled pool: 1160
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+0: 0.65
+1: 0.606
+2: 0.609
+mean acc: 0.6217. std dev acc: 0.0201
+mean time: 24326.6667. std dev acc: 895.0625

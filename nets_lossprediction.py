@@ -315,21 +315,22 @@ class waterbirds_Net_LPL(nn.Module):
 
 
 def get_lossnet(name):
-	if name == 'PneumoniaMNIST':
-		return LossNet(feature_sizes=[224, 112, 56, 28], num_channels=[64, 128, 256, 512], interm_dim=128)
-	elif 'MNIST' in name:
-		return LossNet(feature_sizes=[14, 7, 4, 2], num_channels=[64, 128, 256, 512], interm_dim=128) 
-	elif 'CIFAR' in name:
-		return LossNet(feature_sizes=[32, 16, 8, 4], num_channels=[64, 128, 256, 512], interm_dim=128)
-	elif 'ImageNet' in name:
-		return LossNet(feature_sizes=[64, 32, 16, 8], num_channels=[64, 128, 256, 512], interm_dim=128)
-	elif 'BreakHis' in name:
-		return LossNet(feature_sizes=[224, 112, 56, 28], num_channels=[64, 128, 256, 512], interm_dim=128)
-	elif 'waterbirds' in name:
-		return LossNet(feature_sizes=[128, 64, 32, 16], num_channels=[64, 128, 256, 512], interm_dim=128)
-	else:
-		raise NotImplementedError
-
+    if name == 'PneumoniaMNIST':
+        return LossNet(feature_sizes=[224, 112, 56, 28], num_channels=[64, 128, 256, 512], interm_dim=128)
+    elif 'MNIST' in name:
+        return LossNet(feature_sizes=[14, 7, 4, 2], num_channels=[64, 128, 256, 512], interm_dim=128) 
+    elif 'CIFAR' in name:
+        return LossNet(feature_sizes=[32, 16, 8, 4], num_channels=[64, 128, 256, 512], interm_dim=128)
+    elif 'ImageNet' in name:
+        return LossNet(feature_sizes=[64, 32, 16, 8], num_channels=[64, 128, 256, 512], interm_dim=128)
+    elif 'BreakHis' in name:
+        return LossNet(feature_sizes=[224, 112, 56, 28], num_channels=[64, 128, 256, 512], interm_dim=128)
+    elif 'waterbirds' in name:
+        return LossNet(feature_sizes=[128, 64, 32, 16], num_channels=[64, 128, 256, 512], interm_dim=128)
+    elif 'uc_merced' in name:
+        return LossNet(feature_sizes=[256, 128, 64, 32], num_channels=[64, 128, 256, 512], interm_dim=128)
+    else:
+        raise NotImplementedError
 class LossNet(nn.Module):
 	def __init__(self, feature_sizes=[28, 14, 7, 4], num_channels=[64, 128, 256, 512], interm_dim=128):
 		super(LossNet, self).__init__()

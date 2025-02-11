@@ -1,0 +1,13 @@
+dataset: uc_merced
+AL strategy: BadgeSampling
+number of labeled pool: 100
+number of unlabeled pool: 1580
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+0: 0.662
+1: 0.639
+2: 0.643
+mean acc: 0.648. std dev acc: 0.01
+mean time: 21653.0. std dev acc: 226.0723

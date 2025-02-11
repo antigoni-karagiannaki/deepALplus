@@ -1,0 +1,824 @@
+uc_merced_Imb
+RANDOM SEED 4666
+EntropySampling
+Round 0
+testing accuracy 0.26988636363636365
+
+
+Round 1
+testing accuracy 0.36079545454545453
+
+
+Round 2
+testing accuracy 0.48011363636363635
+
+
+Round 3
+testing accuracy 0.5965909090909091
+
+
+Round 4
+testing accuracy 0.6534090909090909
+
+
+Round 5
+testing accuracy 0.6079545454545454
+
+
+Round 6
+testing accuracy 0.7244318181818182
+
+
+Round 7
+testing accuracy 0.7698863636363636
+
+
+Round 8
+testing accuracy 0.75
+
+
+Round 9
+uc_merced_Imb
+RANDOM SEED 4666
+EntropySampling
+Round 0
+testing accuracy 0.23579545454545456
+
+
+Round 1
+testing accuracy 0.4460227272727273
+
+
+Round 2
+testing accuracy 0.5568181818181818
+
+
+Round 3
+uc_merced_Imb
+RANDOM SEED 4666
+EntropySampling
+Round 0
+testing accuracy 0.39204545454545453
+
+
+Round 1
+testing accuracy 0.3778409090909091
+
+
+Round 2
+testing accuracy 0.5795454545454546
+
+
+Round 3
+testing accuracy 0.5852272727272727
+
+
+Round 4
+testing accuracy 0.6676136363636364
+
+
+Round 5
+testing accuracy 0.6761363636363636
+
+
+Round 6
+testing accuracy 0.6789772727272727
+
+
+Round 7
+testing accuracy 0.7556818181818182
+
+
+Round 8
+testing accuracy 0.7556818181818182
+
+
+Round 9
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0, 10: 0.8, 11: 0.8, 12: 0.8, 13: 0.8, 14: 0.8, 15: 0.6, 16: 0.6, 17: 0.6, 18: 0.6, 19: 0.6, 20: 0.6}
+Class distribution after imbalance:
+Class 0: 75 samples
+Class 1: 76 samples
+Class 2: 75 samples
+Class 3: 75 samples
+Class 4: 87 samples
+Class 5: 83 samples
+Class 6: 78 samples
+Class 7: 84 samples
+Class 8: 85 samples
+Class 9: 79 samples
+Class 10: 64 samples
+Class 11: 66 samples
+Class 12: 65 samples
+Class 13: 63 samples
+Class 14: 60 samples
+Class 15: 49 samples
+Class 16: 49 samples
+Class 17: 48 samples
+Class 18: 47 samples
+Class 19: 49 samples
+Class 20: 46 samples
+Class distribution in training set:
+Class 0: 75 samples
+Class 1: 76 samples
+Class 2: 75 samples
+Class 3: 75 samples
+Class 4: 87 samples
+Class 5: 83 samples
+Class 6: 78 samples
+Class 7: 84 samples
+Class 8: 85 samples
+Class 9: 79 samples
+Class 10: 64 samples
+Class 11: 66 samples
+Class 12: 65 samples
+Class 13: 63 samples
+Class 14: 60 samples
+Class 15: 49 samples
+Class 16: 49 samples
+Class 17: 48 samples
+Class 18: 47 samples
+Class 19: 49 samples
+Class 20: 46 samples
+uc_merced_Imb
+RANDOM SEED 4600
+EntropySampling
+Round 0
+testing accuracy 0.22142857142857142
+
+
+Round 1
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([303, 21])
+testing accuracy 0.4261904761904762
+
+
+Round 2
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([203, 21])
+testing accuracy 0.5571428571428572
+
+
+Round 3
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([103, 21])
+testing accuracy 0.5380952380952381
+
+
+Round 4
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([3, 21])
+testing accuracy 0.7071428571428572
+
+
+Round 5
+Length of Labels:21
+Prob shape: torch.Size([903, 21])
+testing accuracy 0.6523809523809524
+
+
+Round 6
+Length of Labels:21
+Prob shape: torch.Size([803, 21])
+testing accuracy 0.6642857142857143
+
+
+Round 7
+Length of Labels:21
+Prob shape: torch.Size([703, 21])
+testing accuracy 0.6880952380952381
+
+
+Round 8
+Length of Labels:21
+Prob shape: torch.Size([603, 21])
+testing accuracy 0.7333333333333333
+
+
+Round 9
+Length of Labels:21
+Prob shape: torch.Size([503, 21])
+testing accuracy 0.7761904761904762
+
+
+Round 10
+Length of Labels:21
+Prob shape: torch.Size([403, 21])
+testing accuracy 0.8119047619047619
+
+
+SEED 4600
+EntropySampling
+[0.22142857 0.42619048 0.55714286 0.53809524 0.70714286 0.65238095
+ 0.66428571 0.68809524 0.73333333 0.77619048 0.81190476]
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0, 10: 0.8, 11: 0.8, 12: 0.8, 13: 0.8, 14: 0.8, 15: 0.6, 16: 0.6, 17: 0.6, 18: 0.6, 19: 0.6, 20: 0.6}
+Class distribution after imbalance:
+Class 0: 77 samples
+Class 1: 79 samples
+Class 2: 77 samples
+Class 3: 81 samples
+Class 4: 82 samples
+Class 5: 75 samples
+Class 6: 84 samples
+Class 7: 79 samples
+Class 8: 82 samples
+Class 9: 73 samples
+Class 10: 56 samples
+Class 11: 71 samples
+Class 12: 68 samples
+Class 13: 69 samples
+Class 14: 60 samples
+Class 15: 47 samples
+Class 16: 48 samples
+Class 17: 48 samples
+Class 18: 46 samples
+Class 19: 49 samples
+Class 20: 49 samples
+Class distribution in training set:
+Class 0: 77 samples
+Class 1: 79 samples
+Class 2: 77 samples
+Class 3: 81 samples
+Class 4: 82 samples
+Class 5: 75 samples
+Class 6: 84 samples
+Class 7: 79 samples
+Class 8: 82 samples
+Class 9: 73 samples
+Class 10: 56 samples
+Class 11: 71 samples
+Class 12: 68 samples
+Class 13: 69 samples
+Class 14: 60 samples
+Class 15: 47 samples
+Class 16: 48 samples
+Class 17: 48 samples
+Class 18: 46 samples
+Class 19: 49 samples
+Class 20: 49 samples
+uc_merced_Imb
+RANDOM SEED 4600
+EntropySampling
+Round 0
+testing accuracy 0.3261904761904762
+
+
+Round 1
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([300, 21])
+testing accuracy 0.4238095238095238
+
+
+Round 2
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([200, 21])
+testing accuracy 0.4785714285714286
+
+
+Round 3
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([100, 21])
+testing accuracy 0.5952380952380952
+
+
+Round 4
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+testing accuracy 0.6285714285714286
+
+
+Round 5
+Length of Labels:21
+Prob shape: torch.Size([900, 21])
+testing accuracy 0.6023809523809524
+
+
+Round 6
+Length of Labels:21
+Prob shape: torch.Size([800, 21])
+testing accuracy 0.7357142857142858
+
+
+Round 7
+Length of Labels:21
+Prob shape: torch.Size([700, 21])
+testing accuracy 0.75
+
+
+Round 8
+Length of Labels:21
+Prob shape: torch.Size([600, 21])
+testing accuracy 0.719047619047619
+
+
+Round 9
+Length of Labels:21
+Prob shape: torch.Size([500, 21])
+testing accuracy 0.7761904761904762
+
+
+Round 10
+Length of Labels:21
+Prob shape: torch.Size([400, 21])
+testing accuracy 0.6285714285714286
+
+
+SEED 4600
+EntropySampling
+[0.32619048 0.42380952 0.47857143 0.5952381  0.62857143 0.60238095
+ 0.73571429 0.75       0.71904762 0.77619048 0.62857143]
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0, 10: 0.8, 11: 0.8, 12: 0.8, 13: 0.8, 14: 0.8, 15: 0.6, 16: 0.6, 17: 0.6, 18: 0.6, 19: 0.6, 20: 0.6}
+Class distribution after imbalance:
+Class 0: 80 samples
+Class 1: 86 samples
+Class 2: 87 samples
+Class 3: 86 samples
+Class 4: 81 samples
+Class 5: 78 samples
+Class 6: 84 samples
+Class 7: 81 samples
+Class 8: 81 samples
+Class 9: 77 samples
+Class 10: 67 samples
+Class 11: 55 samples
+Class 12: 63 samples
+Class 13: 65 samples
+Class 14: 58 samples
+Class 15: 49 samples
+Class 16: 45 samples
+Class 17: 46 samples
+Class 18: 49 samples
+Class 19: 41 samples
+Class 20: 51 samples
+Class distribution in training set:
+Class 0: 80 samples
+Class 1: 86 samples
+Class 2: 87 samples
+Class 3: 86 samples
+Class 4: 81 samples
+Class 5: 78 samples
+Class 6: 84 samples
+Class 7: 81 samples
+Class 8: 81 samples
+Class 9: 77 samples
+Class 10: 67 samples
+Class 11: 55 samples
+Class 12: 63 samples
+Class 13: 65 samples
+Class 14: 58 samples
+Class 15: 49 samples
+Class 16: 45 samples
+Class 17: 46 samples
+Class 18: 49 samples
+Class 19: 41 samples
+Class 20: 51 samples
+uc_merced_Imb
+RANDOM SEED 4600
+EntropySampling
+Round 0
+testing accuracy 0.29285714285714287
+
+
+Round 1
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([310, 21])
+testing accuracy 0.40714285714285714
+
+
+Round 2
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([210, 21])
+testing accuracy 0.5095238095238095
+
+
+Round 3
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([110, 21])
+testing accuracy 0.5761904761904761
+
+
+Round 4
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([10, 21])
+testing accuracy 0.5523809523809524
+
+
+Round 5
+Length of Labels:21
+Prob shape: torch.Size([910, 21])
+testing accuracy 0.6833333333333333
+
+
+Round 6
+Length of Labels:21
+Prob shape: torch.Size([810, 21])
+testing accuracy 0.6619047619047619
+
+
+Round 7
+Length of Labels:21
+Prob shape: torch.Size([710, 21])
+testing accuracy 0.7238095238095238
+
+
+Round 8
+Length of Labels:21
+Prob shape: torch.Size([610, 21])
+testing accuracy 0.7928571428571428
+
+
+Round 9
+Length of Labels:21
+Prob shape: torch.Size([510, 21])
+testing accuracy 0.7309523809523809
+
+
+Round 10
+Length of Labels:20
+Prob shape: torch.Size([410, 21])
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0, 10: 0.8, 11: 0.8, 12: 0.8, 13: 0.8, 14: 0.8, 15: 0.6, 16: 0.6, 17: 0.6, 18: 0.6, 19: 0.6, 20: 0.6}
+Class distribution after imbalance:
+Class 0: 75 samples
+Class 1: 76 samples
+Class 2: 75 samples
+Class 3: 75 samples
+Class 4: 87 samples
+Class 5: 83 samples
+Class 6: 78 samples
+Class 7: 84 samples
+Class 8: 85 samples
+Class 9: 79 samples
+Class 10: 64 samples
+Class 11: 66 samples
+Class 12: 65 samples
+Class 13: 63 samples
+Class 14: 60 samples
+Class 15: 49 samples
+Class 16: 49 samples
+Class 17: 48 samples
+Class 18: 47 samples
+Class 19: 49 samples
+Class 20: 46 samples
+Class distribution in training set -oversampled:
+Class 0: 87 samples
+Class 1: 87 samples
+Class 2: 87 samples
+Class 3: 87 samples
+Class 4: 87 samples
+Class 5: 87 samples
+Class 6: 87 samples
+Class 7: 87 samples
+Class 8: 87 samples
+Class 9: 87 samples
+Class 10: 87 samples
+Class 11: 87 samples
+Class 12: 87 samples
+Class 13: 87 samples
+Class 14: 87 samples
+Class 15: 87 samples
+Class 16: 87 samples
+Class 17: 87 samples
+Class 18: 87 samples
+Class 19: 87 samples
+Class 20: 87 samples
+uc_merced_Imb
+RANDOM SEED 4600
+EntropySampling
+Round 0
+testing accuracy 0.30952380952380953
+
+
+Round 1
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([727, 21])
+testing accuracy 0.4119047619047619
+
+
+Round 2
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([627, 21])
+testing accuracy 0.5404761904761904
+
+
+Round 3
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([527, 21])
+testing accuracy 0.6738095238095239
+
+
+Round 4
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([427, 21])
+testing accuracy 0.6476190476190476
+
+
+Round 5
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([327, 21])
+testing accuracy 0.5571428571428572
+
+
+Round 6
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([227, 21])
+testing accuracy 0.7523809523809524
+
+
+Round 7
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([127, 21])
+testing accuracy 0.7857142857142857
+
+
+Round 8
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([27, 21])
+testing accuracy 0.780952380952381
+
+
+Round 9
+Length of Labels:21
+Prob shape: torch.Size([927, 21])
+testing accuracy 0.7642857142857142
+
+
+Round 10
+Length of Labels:21
+Prob shape: torch.Size([827, 21])
+testing accuracy 0.7595238095238095
+
+
+SEED 4600
+EntropySampling
+[0.30952381 0.41190476 0.54047619 0.67380952 0.64761905 0.55714286
+ 0.75238095 0.78571429 0.78095238 0.76428571 0.75952381]
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0, 10: 0.8, 11: 0.8, 12: 0.8, 13: 0.8, 14: 0.8, 15: 0.6, 16: 0.6, 17: 0.6, 18: 0.6, 19: 0.6, 20: 0.6}
+Class distribution after imbalance:
+Class 0: 79 samples
+Class 1: 75 samples
+Class 2: 74 samples
+Class 3: 82 samples
+Class 4: 84 samples
+Class 5: 80 samples
+Class 6: 83 samples
+Class 7: 76 samples
+Class 8: 82 samples
+Class 9: 86 samples
+Class 10: 59 samples
+Class 11: 67 samples
+Class 12: 66 samples
+Class 13: 63 samples
+Class 14: 64 samples
+Class 15: 45 samples
+Class 16: 46 samples
+Class 17: 46 samples
+Class 18: 48 samples
+Class 19: 48 samples
+Class 20: 51 samples
+Class distribution in training set -oversampled:
+Class 0: 86 samples
+Class 1: 86 samples
+Class 2: 86 samples
+Class 3: 86 samples
+Class 4: 86 samples
+Class 5: 86 samples
+Class 6: 86 samples
+Class 7: 86 samples
+Class 8: 86 samples
+Class 9: 86 samples
+Class 10: 86 samples
+Class 11: 86 samples
+Class 12: 86 samples
+Class 13: 86 samples
+Class 14: 86 samples
+Class 15: 86 samples
+Class 16: 86 samples
+Class 17: 86 samples
+Class 18: 86 samples
+Class 19: 86 samples
+Class 20: 86 samples
+uc_merced_Imb
+RANDOM SEED 4600
+EntropySampling
+Round 0
+testing accuracy 0.3523809523809524
+
+
+Round 1
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([706, 21])
+testing accuracy 0.42857142857142855
+
+
+Round 2
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([606, 21])
+testing accuracy 0.4642857142857143
+
+
+Round 3
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([506, 21])
+testing accuracy 0.5142857142857142
+
+
+Round 4
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([406, 21])
+testing accuracy 0.5857142857142857
+
+
+Round 5
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([306, 21])
+testing accuracy 0.7404761904761905
+
+
+Round 6
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([206, 21])
+testing accuracy 0.7142857142857143
+
+
+Round 7
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([106, 21])
+testing accuracy 0.7904761904761904
+
+
+Round 8
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([6, 21])
+testing accuracy 0.7357142857142858
+
+
+Round 9
+Length of Labels:21
+Prob shape: torch.Size([906, 21])
+testing accuracy 0.830952380952381
+
+
+Round 10
+Length of Labels:21
+Prob shape: torch.Size([806, 21])
+testing accuracy 0.8214285714285714
+
+
+SEED 4600
+EntropySampling
+[0.35238095 0.42857143 0.46428571 0.51428571 0.58571429 0.74047619
+ 0.71428571 0.79047619 0.73571429 0.83095238 0.82142857]
+{0: 1.0, 1: 1.0, 2: 1.0, 3: 1.0, 4: 1.0, 5: 1.0, 6: 1.0, 7: 1.0, 8: 1.0, 9: 1.0, 10: 0.8, 11: 0.8, 12: 0.8, 13: 0.8, 14: 0.8, 15: 0.6, 16: 0.6, 17: 0.6, 18: 0.6, 19: 0.6, 20: 0.6}
+Class distribution after imbalance:
+Class 0: 78 samples
+Class 1: 82 samples
+Class 2: 82 samples
+Class 3: 79 samples
+Class 4: 80 samples
+Class 5: 81 samples
+Class 6: 81 samples
+Class 7: 80 samples
+Class 8: 85 samples
+Class 9: 79 samples
+Class 10: 65 samples
+Class 11: 62 samples
+Class 12: 67 samples
+Class 13: 60 samples
+Class 14: 62 samples
+Class 15: 51 samples
+Class 16: 43 samples
+Class 17: 48 samples
+Class 18: 46 samples
+Class 19: 48 samples
+Class 20: 47 samples
+Class distribution in training set -oversampled:
+Class 0: 85 samples
+Class 1: 85 samples
+Class 2: 85 samples
+Class 3: 85 samples
+Class 4: 85 samples
+Class 5: 85 samples
+Class 6: 85 samples
+Class 7: 85 samples
+Class 8: 85 samples
+Class 9: 85 samples
+Class 10: 85 samples
+Class 11: 85 samples
+Class 12: 85 samples
+Class 13: 85 samples
+Class 14: 85 samples
+Class 15: 85 samples
+Class 16: 85 samples
+Class 17: 85 samples
+Class 18: 85 samples
+Class 19: 85 samples
+Class 20: 85 samples
+uc_merced_Imb
+RANDOM SEED 4600
+EntropySampling
+Round 0
+testing accuracy 0.30714285714285716
+
+
+Round 1
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([685, 21])
+testing accuracy 0.44285714285714284
+
+
+Round 2
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([585, 21])
+testing accuracy 0.5547619047619048
+
+
+Round 3
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([485, 21])
+testing accuracy 0.5976190476190476
+
+
+Round 4
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([385, 21])
+testing accuracy 0.65
+
+
+Round 5
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([285, 21])
+testing accuracy 0.7357142857142858
+
+
+Round 6
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([185, 21])
+testing accuracy 0.6452380952380953
+
+
+Round 7
+Length of Labels:21
+Prob shape: torch.Size([1000, 21])
+Prob shape: torch.Size([85, 21])
+testing accuracy 0.7547619047619047
+
+
+Round 8
+Length of Labels:21
+Prob shape: torch.Size([985, 21])
+testing accuracy 0.7333333333333333
+
+
+Round 9
+Length of Labels:21
+Prob shape: torch.Size([885, 21])
+testing accuracy 0.7761904761904762
+
+
+Round 10
+Length of Labels:21
+Prob shape: torch.Size([785, 21])
+testing accuracy 0.7952380952380952
+
+
+SEED 4600
+EntropySampling
+[0.30714286 0.44285714 0.5547619  0.59761905 0.65       0.73571429
+ 0.6452381  0.7547619  0.73333333 0.77619048 0.7952381 ]
+0: 0.645
+1: 0.639
+2: 0.644
+mean AUBC(acc): 0.6427. std dev AUBC(acc): 0.0026
+mean time: 21160.6667. std dev time: 134.8637

@@ -1,0 +1,19 @@
+dataset: uc_merced
+AL strategy: BadgeSampling
+number of labeled pool: 100
+number of unlabeled pool: 1580
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+Size of training set is 100, accuracy is 0.269.
+Size of training set is 200, accuracy is 0.4349.
+Size of training set is 300, accuracy is 0.5738.
+Size of training set is 400, accuracy is 0.6167.
+Size of training set is 500, accuracy is 0.6286.
+Size of training set is 600, accuracy is 0.7095.
+Size of training set is 700, accuracy is 0.6937.
+Size of training set is 800, accuracy is 0.7214.
+Size of training set is 900, accuracy is 0.7778.
+Size of training set is 1000, accuracy is 0.804.
+Size of training set is 1100, accuracy is 0.7698.

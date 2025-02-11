@@ -1,0 +1,517 @@
+uc_merced_Imb
+RANDOM SEED 4666
+KCenterGreedy
+Round 0
+testing accuracy 0.3664772727272727
+
+
+Round 1
+testing accuracy 0.4602272727272727
+
+
+Round 2
+testing accuracy 0.5795454545454546
+
+
+Round 3
+testing accuracy 0.6420454545454546
+
+
+Round 4
+testing accuracy 0.6392045454545454
+
+
+Round 5
+testing accuracy 0.6363636363636364
+
+
+Round 6
+testing accuracy 0.75
+
+
+Round 7
+testing accuracy 0.6846590909090909
+
+
+Round 8
+testing accuracy 0.7840909090909091
+
+
+Round 9
+testing accuracy 0.6818181818181818
+
+
+Round 10
+uc_merced_Imb
+RANDOM SEED 4666
+KCenterGreedy
+Round 0
+testing accuracy 0.2471590909090909
+
+
+Round 1
+uc_merced_Imb
+RANDOM SEED 4666
+KCenterGreedy
+Round 0
+testing accuracy 0.3068181818181818
+
+
+Round 1
+testing accuracy 0.41761363636363635
+
+
+Round 2
+testing accuracy 0.48863636363636365
+
+
+Round 3
+testing accuracy 0.6960227272727273
+
+
+Round 4
+testing accuracy 0.6534090909090909
+
+
+Round 5
+testing accuracy 0.6022727272727273
+
+
+Round 6
+testing accuracy 0.6079545454545454
+
+
+Round 7
+testing accuracy 0.7926136363636364
+
+
+Round 8
+testing accuracy 0.7443181818181818
+
+
+Round 9
+testing accuracy 0.6875
+
+
+Round 10
+Loaded dataset with 2100 samples.
+Class distribution after imbalance:
+Class 0: 100 samples
+Class 1: 100 samples
+Class 2: 100 samples
+Class 3: 100 samples
+Class 4: 100 samples
+Class 5: 100 samples
+Class 6: 100 samples
+Class 7: 100 samples
+Class 8: 100 samples
+Class 9: 100 samples
+Class 10: 80 samples
+Class 11: 80 samples
+Class 12: 80 samples
+Class 13: 80 samples
+Class 14: 80 samples
+Class 15: 60 samples
+Class 16: 60 samples
+Class 17: 60 samples
+Class 18: 60 samples
+Class 19: 60 samples
+Class 20: 60 samples
+Training set size: 1056
+Validation set size: 352
+Test set size: 352
+uc_merced_Imb
+RANDOM SEED 4666
+KCenterGreedy
+Round 0
+testing accuracy 0.09090909090909091
+
+
+Round 1
+testing accuracy 0.11363636363636363
+
+
+Round 2
+testing accuracy 0.15056818181818182
+
+
+Round 3
+testing accuracy 0.1903409090909091
+
+
+Round 4
+testing accuracy 0.15625
+
+
+Round 5
+testing accuracy 0.20738636363636365
+
+
+Round 6
+testing accuracy 0.14488636363636365
+
+
+Round 7
+testing accuracy 0.2159090909090909
+
+
+Round 8
+testing accuracy 0.2159090909090909
+
+
+Round 9
+testing accuracy 0.23579545454545456
+
+
+Round 10
+Loaded dataset with 2100 samples.
+Class distribution after imbalance:
+Class 0: 50 samples
+Class 1: 50 samples
+Class 2: 50 samples
+Class 3: 50 samples
+Class 4: 50 samples
+Class 5: 50 samples
+Class 6: 50 samples
+Class 7: 50 samples
+Class 8: 50 samples
+Class 9: 50 samples
+Class 10: 40 samples
+Class 11: 40 samples
+Class 12: 40 samples
+Class 13: 40 samples
+Class 14: 40 samples
+Class 15: 60 samples
+Class 16: 60 samples
+Class 17: 60 samples
+Class 18: 60 samples
+Class 19: 60 samples
+Class 20: 60 samples
+Training set size: 636
+Validation set size: 212
+Test set size: 212
+uc_merced_Imb
+RANDOM SEED 4667
+KCenterGreedy
+Round 0
+testing accuracy 0.10849056603773585
+
+
+Round 1
+testing accuracy 0.11320754716981132
+
+
+Round 2
+testing accuracy 0.08962264150943396
+
+
+Round 3
+testing accuracy 0.1320754716981132
+
+
+Round 4
+testing accuracy 0.16981132075471697
+
+
+Round 5
+testing accuracy 0.17452830188679244
+
+
+Round 6
+testing accuracy 0.16037735849056603
+
+
+Round 7
+testing accuracy 0.12264150943396226
+
+
+Round 8
+testing accuracy 0.18867924528301888
+
+
+Round 9
+testing accuracy 0.13679245283018868
+
+
+Round 10
+testing accuracy 0.12735849056603774
+
+
+SEED 4667
+KCenterGreedy
+[0.10849057 0.11320755 0.08962264 0.13207547 0.16981132 0.1745283
+ 0.16037736 0.12264151 0.18867925 0.13679245 0.12735849]
+Loaded dataset with 2100 samples.
+Class distribution after imbalance:
+Class 0: 50 samples
+Class 1: 50 samples
+Class 2: 50 samples
+Class 3: 50 samples
+Class 4: 50 samples
+Class 5: 50 samples
+Class 6: 50 samples
+Class 7: 50 samples
+Class 8: 50 samples
+Class 9: 50 samples
+Class 10: 40 samples
+Class 11: 40 samples
+Class 12: 40 samples
+Class 13: 40 samples
+Class 14: 40 samples
+Class 15: 60 samples
+Class 16: 60 samples
+Class 17: 60 samples
+Class 18: 60 samples
+Class 19: 60 samples
+Class 20: 60 samples
+Training set size: 636
+Validation set size: 212
+Test set size: 212
+uc_merced_Imb
+RANDOM SEED 4667
+KCenterGreedy
+Round 0
+testing accuracy 0.08490566037735849
+
+
+Round 1
+testing accuracy 0.17452830188679244
+
+
+Round 2
+Loaded dataset with 2100 samples.
+Class distribution after imbalance:
+Class 0: 100 samples
+Class 1: 100 samples
+Class 2: 100 samples
+Class 3: 100 samples
+Class 4: 100 samples
+Class 5: 100 samples
+Class 6: 100 samples
+Class 7: 100 samples
+Class 8: 100 samples
+Class 9: 100 samples
+Class 10: 80 samples
+Class 11: 80 samples
+Class 12: 80 samples
+Class 13: 80 samples
+Class 14: 80 samples
+Class 15: 60 samples
+Class 16: 60 samples
+Class 17: 60 samples
+Class 18: 60 samples
+Class 19: 60 samples
+Class 20: 60 samples
+Training set size: 1056
+Validation set size: 352
+Test set size: 352
+uc_merced_Imb
+RANDOM SEED 4667
+KCenterGreedy
+Round 0
+testing accuracy 0.05965909090909091
+
+
+Round 1
+testing accuracy 0.1278409090909091
+
+
+Round 2
+testing accuracy 0.1846590909090909
+
+
+Round 3
+testing accuracy 0.23295454545454544
+
+
+Round 4
+testing accuracy 0.20738636363636365
+
+
+Round 5
+testing accuracy 0.1903409090909091
+
+
+Round 6
+testing accuracy 0.20454545454545456
+
+
+Round 7
+testing accuracy 0.22727272727272727
+
+
+Round 8
+testing accuracy 0.19318181818181818
+
+
+Round 9
+testing accuracy 0.21022727272727273
+
+
+Round 10
+testing accuracy 0.19886363636363635
+
+
+SEED 4667
+KCenterGreedy
+[0.05965909 0.12784091 0.18465909 0.23295455 0.20738636 0.19034091
+ 0.20454545 0.22727273 0.19318182 0.21022727 0.19886364]
+Loaded dataset with 2100 samples.
+Class distribution after imbalance:
+Class 0: 100 samples
+Class 1: 100 samples
+Class 2: 100 samples
+Class 3: 100 samples
+Class 4: 100 samples
+Class 5: 100 samples
+Class 6: 100 samples
+Class 7: 100 samples
+Class 8: 100 samples
+Class 9: 100 samples
+Class 10: 80 samples
+Class 11: 80 samples
+Class 12: 80 samples
+Class 13: 80 samples
+Class 14: 80 samples
+Class 15: 60 samples
+Class 16: 60 samples
+Class 17: 60 samples
+Class 18: 60 samples
+Class 19: 60 samples
+Class 20: 60 samples
+Training set size: 1056
+Validation set size: 352
+Test set size: 352
+uc_merced_Imb
+RANDOM SEED 4667
+KCenterGreedy
+Round 0
+testing accuracy 0.08238636363636363
+
+
+Round 1
+testing accuracy 0.11647727272727272
+
+
+Round 2
+testing accuracy 0.14488636363636365
+
+
+Round 3
+testing accuracy 0.17329545454545456
+
+
+Round 4
+testing accuracy 0.1846590909090909
+
+
+Round 5
+testing accuracy 0.20454545454545456
+
+
+Round 6
+testing accuracy 0.22727272727272727
+
+
+Round 7
+testing accuracy 0.2471590909090909
+
+
+Round 8
+testing accuracy 0.1903409090909091
+
+
+Round 9
+testing accuracy 0.21306818181818182
+
+
+Round 10
+testing accuracy 0.22443181818181818
+
+
+SEED 4667
+KCenterGreedy
+[0.08238636 0.11647727 0.14488636 0.17329545 0.18465909 0.20454545
+ 0.22727273 0.24715909 0.19034091 0.21306818 0.22443182]
+Loaded dataset with 2100 samples.
+Class distribution after imbalance:
+Class 0: 100 samples
+Class 1: 100 samples
+Class 2: 100 samples
+Class 3: 100 samples
+Class 4: 100 samples
+Class 5: 100 samples
+Class 6: 100 samples
+Class 7: 100 samples
+Class 8: 100 samples
+Class 9: 100 samples
+Class 10: 80 samples
+Class 11: 80 samples
+Class 12: 80 samples
+Class 13: 80 samples
+Class 14: 80 samples
+Class 15: 60 samples
+Class 16: 60 samples
+Class 17: 60 samples
+Class 18: 60 samples
+Class 19: 60 samples
+Class 20: 60 samples
+Training set size: 1056
+Validation set size: 352
+Test set size: 352
+uc_merced_Imb
+RANDOM SEED 4667
+KCenterGreedy
+Round 0
+testing accuracy 0.10795454545454546
+
+
+Round 1
+testing accuracy 0.10795454545454546
+
+
+Round 2
+testing accuracy 0.11363636363636363
+
+
+Round 3
+testing accuracy 0.1903409090909091
+
+
+Round 4
+testing accuracy 0.18181818181818182
+
+
+Round 5
+testing accuracy 0.1903409090909091
+
+
+Round 6
+testing accuracy 0.21875
+
+
+Round 7
+testing accuracy 0.17329545454545456
+
+
+Round 8
+testing accuracy 0.23863636363636365
+
+
+Round 9
+testing accuracy 0.2215909090909091
+
+
+Round 10
+testing accuracy 0.22443181818181818
+
+
+SEED 4667
+KCenterGreedy
+[0.10795455 0.10795455 0.11363636 0.19034091 0.18181818 0.19034091
+ 0.21875    0.17329545 0.23863636 0.22159091 0.22443182]
+0: 0.191
+1: 0.186
+2: 0.18
+mean AUBC(acc): 0.1857. std dev AUBC(acc): 0.0045
+mean time: 20721.6667. std dev time: 80.4004

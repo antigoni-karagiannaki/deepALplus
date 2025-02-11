@@ -54,12 +54,14 @@ class Net:
     def predict_prob(self, data):
         self.clf.eval()
         probs = torch.zeros([len(data), len(np.unique(data.Y))])
+        print(f"Length of Labels:{len(np.unique(data.Y))}" )
         loader = DataLoader(data, shuffle=False, **self.params['loader_te_args'])
         with torch.no_grad():
             for x, y, idxs in loader:
                 x, y = x.to(self.device), y.to(self.device)
                 out, e1 = self.clf(x)
                 prob = F.softmax(out, dim=1)
+                print(f"Prob shape: {prob.shape}")
                 probs[idxs] = prob.cpu()
         return probs
     
@@ -216,6 +218,24 @@ class waterbirds_Net(nn.Module):
 	def forward(self, x):
 		feature  = self.features(x)
 		x = feature.view(feature.size(0), -1)		
+		output = self.classifier(x)
+		return output, x
+	
+	def get_embedding_dim(self):
+		return self.dim
+	
+class ucmerced_Net(nn.Module):
+	# it has 21 classes
+	def __init__(self, dim = 3*256*256, pretrained=False, num_classes = 21):
+		super().__init__()
+		resnet18 = models.resnet18(pretrained=pretrained)
+		self.features = nn.Sequential(*list(resnet18.children())[:-1])
+		self.classifier = nn.Linear(resnet18.fc.in_features,num_classes)
+		self.dim = resnet18.fc.in_features
+
+	def forward(self, x):
+		feature  = self.features(x)
+		x = feature.view(feature.size(0), -1)
 		output = self.classifier(x)
 		return output, x
 	

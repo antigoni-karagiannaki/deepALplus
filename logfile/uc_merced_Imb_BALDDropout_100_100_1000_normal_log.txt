@@ -1,0 +1,100 @@
+uc_merced_Imb
+RANDOM SEED 4666
+BALDDropout
+Round 0
+testing accuracy 0.26704545454545453
+
+
+Round 1
+uc_merced_Imb
+RANDOM SEED 4666
+BALDDropout
+Round 0
+testing accuracy 0.3380681818181818
+
+
+Round 1
+uc_merced_Imb
+RANDOM SEED 4666
+BALDDropout
+Round 0
+testing accuracy 0.3210227272727273
+
+
+Round 1
+uc_merced_Imb
+RANDOM SEED 4666
+BALDDropout
+Round 0
+testing accuracy 0.3465909090909091
+
+
+Round 1
+Loaded dataset with 2100 samples.
+Class distribution after imbalance:
+Class 0: 100 samples
+Class 1: 100 samples
+Class 2: 100 samples
+Class 3: 100 samples
+Class 4: 100 samples
+Class 5: 100 samples
+Class 6: 100 samples
+Class 7: 100 samples
+Class 8: 100 samples
+Class 9: 100 samples
+Class 10: 80 samples
+Class 11: 80 samples
+Class 12: 80 samples
+Class 13: 80 samples
+Class 14: 80 samples
+Class 15: 60 samples
+Class 16: 60 samples
+Class 17: 60 samples
+Class 18: 60 samples
+Class 19: 60 samples
+Class 20: 60 samples
+Training set size: 1056
+Validation set size: 352
+Test set size: 352
+uc_merced_Imb
+RANDOM SEED 4666
+BALDDropout
+Round 0
+testing accuracy 0.05113636363636364
+
+
+Round 1
+Loaded dataset with 2100 samples.
+Class distribution after imbalance:
+Class 0: 100 samples
+Class 1: 100 samples
+Class 2: 100 samples
+Class 3: 100 samples
+Class 4: 100 samples
+Class 5: 100 samples
+Class 6: 100 samples
+Class 7: 100 samples
+Class 8: 100 samples
+Class 9: 100 samples
+Class 10: 80 samples
+Class 11: 80 samples
+Class 12: 80 samples
+Class 13: 80 samples
+Class 14: 80 samples
+Class 15: 60 samples
+Class 16: 60 samples
+Class 17: 60 samples
+Class 18: 60 samples
+Class 19: 60 samples
+Class 20: 60 samples
+Training set size: 1056
+Validation set size: 352
+Test set size: 352
+uc_merced_Imb
+RANDOM SEED 4666
+BALDDropout
+Round 0
+testing accuracy 0.09375
+
+
+Round 1

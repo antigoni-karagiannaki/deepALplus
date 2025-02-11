@@ -1,0 +1,13 @@
+dataset: uc_merced_Imb
+AL strategy: EntropySampling
+number of labeled pool: 100
+number of unlabeled pool: 1685
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+0: 0.645
+1: 0.639
+2: 0.644
+mean acc: 0.6427. std dev acc: 0.0026
+mean time: 21160.6667. std dev acc: 134.8637

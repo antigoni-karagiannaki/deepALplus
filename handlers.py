@@ -41,8 +41,59 @@ class CIFAR10_Handler(Dataset):
 
     def __getitem__(self, index):
         x, y = self.X[index], self.Y[index]
+        #x = np.clip(x, 0, 1)
+        #x = (x * 255).astype(np.uint8)
         x = Image.fromarray(x)
         x = self.transform(x)
+        return x, y, index
+
+    def __len__(self):
+        return len(self.X)
+
+import torch
+
+class UC_Merced_Handler(Dataset):
+    def __init__(self, X, Y, transform):
+        self.X = X
+        self.Y = Y
+        self.transform = transform
+
+    # def __getitem__(self, index):
+    #     x, y = self.X[index], self.Y[index]
+    #     x = Image.fromarray(x.numpy(), mode='RGB')
+    #     # if x.ndim == 3:  # Check if x is a 3D array
+    #     #     x =  x.to(torch.float32).mean(axis=2)  # Convert to grayscale by averaging the channels
+    #     # x = Image.fromarray(x.numpy(), mode='L')
+    #     # print(x.size)
+    #     x = self.transform(x)
+    #     return x, y, index
+    
+    def __getitem__(self, idx):
+        img_path = self.X[idx]
+        label = self.Y[idx]
+        image = Image.open(img_path)
+        if self.transform:
+            image = self.transform(image)
+        return image, label, idx
+    
+    def __len__(self):
+        return len(self.X)
+    
+from PIL import Image
+import numpy as np
+from torch.utils.data import Dataset
+
+class UC_Merced_Imb_Handler(Dataset):
+    def __init__(self, X, Y, transform=None):
+        self.X = X
+        self.Y = Y
+        self.transform = transform
+
+    def __getitem__(self, index):
+        x, y = self.X[index], self.Y[index]
+        x = Image.fromarray(x, mode='RGB')  # Remove .numpy() since x is already a NumPy array
+        if self.transform:
+            x = self.transform(x)
         return x, y, index
 
     def __len__(self):

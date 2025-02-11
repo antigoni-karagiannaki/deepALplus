@@ -1,0 +1,13 @@
+dataset: uc_merced_Imb
+AL strategy: KCenterGreedy
+number of labeled pool: 100
+number of unlabeled pool: 956
+number of testing pool: 352
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+0: 0.191
+1: 0.186
+2: 0.18
+mean acc: 0.1857. std dev acc: 0.0045
+mean time: 20721.6667. std dev acc: 80.4004

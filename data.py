@@ -4,6 +4,7 @@ import random
 import os
 from torchvision import datasets
 from PIL import Image
+from sklearn.model_selection import train_test_split
 
 class Data:
     def __init__(self, X_train, Y_train, X_test, Y_test, handler, args_task):
@@ -300,7 +301,6 @@ def get_PneumoniaMNIST(handler, args_task):
 
     return Data(X_tr, Y_tr, X_te, Y_te, handler, args_task)
 
-
 def get_waterbirds(handler, args_task):
     import wilds
     from torchvision import transforms
@@ -360,16 +360,475 @@ def get_waterbirds(handler, args_task):
     X_te = np.array(X_te)
     return Data(X_tr, Y_tr, X_te, Y_te, handler, args_task)
 
+from torchgeo.datasets import UCMerced
+from torchvision.datasets import ImageFolder
+import numpy as np
+import torch
+from PIL import Image
+from torchvision import transforms
+from torchvision.datasets import DatasetFolder
+from torchvision.datasets.folder import make_dataset
+
+# ---------------------- UC Merced -----------------------
+def print_class_distribution(Y, name):
+    unique, counts = np.unique(Y, return_counts=True)
+    print(f"Class distribution in {name}:")
+    for cls, count in zip(unique, counts):
+        print(f"Class {cls}: {count} samples")
+
+def resize_image(image_array, target_size):
+    # Convert the NumPy array to a PIL Image
+    image = Image.fromarray(image_array)
+    # Resize the image
+    resized_image = image.resize(target_size, Image.ANTIALIAS)
+    # Convert the PIL Image back to a NumPy array
+    return np.array(resized_image)
+
+def find_classes(directory) :
+    """Finds the class folders in a dataset.
+
+    See :class:`DatasetFolder` for details.
+    """
+    classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+    if not classes:
+        raise FileNotFoundError(f"Couldn't find any class folder in {directory}.")
+
+    class_to_idx = {cls_name: i for i, cls_name in enumerate(classes)}
+    return classes, class_to_idx
+
+# def get_UcMerced(handler, args_task):
+#     train_dataset = UCMerced('./data/UCMerced_LandUse/Images/', split='train', download=True)
+#     test_dataset = UCMerced('./data/UCMerced_LandUse/Images/', split='test',  download=True)
+    
+#     target_size = (256, 256)
+#     dataset = ImageFolder(root='./data/UCMerced_LandUse/Images/UCMerced_LandUse/Images/')
+#     classes = dataset.classes
+    
+#     directory = os.path.expanduser('./data/UCMerced_LandUse/Images/UCMerced_LandUse/Images/')
+
+#     _, class_to_idx = find_classes(directory)
+    
+#     # Use make_dataset to create the samples list
+#     samples = make_dataset('./data/UCMerced_LandUse/Images/UCMerced_LandUse/Images/', class_to_idx, extensions=('.tif', '.tiff'))
+    
+#     # Print the samples
+#     # for img_path, label in samples:
+#     #     print(f"Image Path: {img_path}, Label: {label}")
+
+#     #######################################################
+#     ## Clean the wrong_shape files
+#     #######################################################
+#     with open('wrong_shape.txt', 'w') as f:
+#         f.write('')
+#     #
+#     #######################################################
+
+#     # Initialize lists to store image arrays
+#     train_images = []
+#     valid_images = []
+#     test_images = []
+
+#     train_targets = []
+#     valid_targets = []
+#     test_targets = []
+
+#     import tifffile as tiff
+
+#     folder_path = './data/UCMerced_LandUse/Images/UCMerced_LandUse/Images/'
+
+#     # TEST file 
+#     with open('./data/UCMerced_LandUse/Images/uc_merced-test.txt', 'r') as file:
+#         # Iterate through each line in the file
+#         for line in file:
+#             img_name = line.strip()
+#             class_name = img_name[:-6]
+#             img_array_test = tiff.imread( folder_path + class_name + '/' + img_name)
+#             #print(img_array_test)
+#             if img_array_test.shape != (256, 256,3): 
+#                 # write in a .txt file the name of the image that has a different shape
+#                 with open('wrong_shape.txt', 'a') as f:
+#                     str_ = 'TEST,'+ img_name + ','+ str(img_array_test.shape)+'\n'
+#                     f.write(str_)
+#             resized_img_array_test = resize_image(img_array_test, target_size)
+#             test_images.append(resized_img_array_test)
+#             test_targets.append(class_to_idx[class_name])
+
+#     # TRAIN file
+#     with open('./data/UCMerced_LandUse/Images/uc_merced-train.txt', 'r') as file:
+#         # Iterate through each line in the file
+#         for line in file:
+#             img_name = line.strip()
+#             class_name = img_name[:-6]
+#             img_array_train = tiff.imread( folder_path + class_name + '/' + img_name)
+#             # print(img_array_train)
+#             #print(img_array_train.shape)
+#             if img_array_train.shape != (256, 256,3): 
+#                 # write in a .txt file the name of the image that has a different shape
+#                 with open('wrong_shape.txt', 'a') as f:
+#                     str_ = 'TRAIN,'+ img_name + ','+ str(img_array_train.shape)+'\n'
+#                     f.write(str_)
+#             resized_img_array_train = resize_image(img_array_train, target_size)
+#             train_images.append(resized_img_array_train)
+#             train_targets.append(class_to_idx[class_name])
+#     #print_class_distribution(train_targets, "training set")
+
+#     # VALID file
+#     with open('./data/UCMerced_LandUse/Images/uc_merced-val.txt', 'r') as file:
+#         # Iterate through each line in the file
+#         for line in file:
+#             img_name = line.strip()
+#             class_name = img_name[:-6]
+#             img_array_valid = tiff.imread( folder_path + class_name + '/' + img_name)
+#             # print(img_array_valid)
+#             if img_array_valid.shape != (256, 256,3): 
+#                 # write in a .txt file the name of the image that has a different shape
+#                 with open('wrong_shape.txt', 'a') as f:
+#                     str_ = 'VAL,'+ img_name + ','+ str(img_array_valid.shape)+'\n'
+#                     f.write(str_)
+#             resized_img_array_valid = resize_image(img_array_valid, target_size)
+#             valid_images.append(resized_img_array_valid)
+#             valid_targets.append(class_to_idx[class_name])
+
+#     print(class_to_idx)
+#     test_images_tensor = torch.tensor(test_images)
+#     train_images_tensor = torch.tensor(train_images)
+#     valid_images_tensor = torch.tensor(valid_images)
+
+#     # print number of classes from the train_targets
+#     #num_classes = len(set(train_targets))
+#     #print(f"Number of classes in the training set: {num_classes}")
+    
+#     return Data(train_images_tensor, torch.tensor(train_targets), test_images_tensor, torch.tensor(test_targets), handler, args_task)
+
+
+import os
+import numpy as np
+import torch
+from torchvision import transforms
+from PIL import Image
+
+# def get_UC_Merced(handler, args_task):
+def get_UcMerced_2(handler, args_task):
+    data_dir = './data/UCMerced_LandUse/Images/UCMerced_LandUse/Images'
+    class_names = sorted(os.listdir(data_dir))
+    
+    # Collect all file paths and labels
+    file_paths = []
+    labels = []
+    for label_idx, class_name in enumerate(class_names):
+        class_dir = os.path.join(data_dir, class_name)
+        if os.path.isdir(class_dir):
+            for file_name in os.listdir(class_dir):
+                if file_name.endswith('.tif'):
+                    file_paths.append(os.path.join(class_dir, file_name))
+                    labels.append(label_idx)
+
+    # Split data into train/test
+    file_paths = np.array(file_paths)
+    labels = np.array(labels)
+    total_samples = len(file_paths)
+    indices = np.random.permutation(total_samples)
+    split = int(total_samples * 0.8)  # 80% train, 20% test
+    
+    train_indices = indices[:split]
+    test_indices = indices[split:]
+
+    X_train = file_paths[train_indices]
+    Y_train = torch.tensor(labels[train_indices], dtype=torch.long)  # Convert to tensor
+    X_test = file_paths[test_indices]
+    Y_test = torch.tensor(labels[test_indices], dtype=torch.long)  # Convert to tensor
+
+    # Return a Data instance
+    return Data(X_train, Y_train, X_test, Y_test, handler, args_task)
+
+""" Function that loads the UCMerced dataset and creates an imbalanced dataset with the specified imbalance ratios. """
+def get_UcMerced_Imbalanced_2(handler, args_task, imbalance_ratios=None):
+    data_dir = './data/UCMerced_LandUse/Images/UCMerced_LandUse/Images'
+    class_names = sorted(os.listdir(data_dir))
+
+    # Collect all file paths and labels
+    file_paths = []
+    labels = []
+    for label_idx, class_name in enumerate(class_names):
+        class_dir = os.path.join(data_dir, class_name)
+        if os.path.isdir(class_dir):
+            for file_name in os.listdir(class_dir):
+                if file_name.endswith('.tif'):
+                    file_paths.append(os.path.join(class_dir, file_name))
+                    labels.append(label_idx)
+    # Split data into train/test
+    file_paths = np.array(file_paths)
+    labels = np.array(labels)
+    total_samples = len(file_paths)
+    indices = np.random.permutation(total_samples)
+    split = int(total_samples * 0.8)  # 80% train, 20% test
+
+    train_indices = indices[:split]
+    test_indices = indices[split:]
+
+    X_train = file_paths[train_indices]
+    Y_train = labels[train_indices]
+    X_test = file_paths[test_indices]
+    Y_test = labels[test_indices]
+
+    # Create imbalance if imbalance_ratios is provided
+    if imbalance_ratios:
+        class_data = {label: [] for label in np.unique(Y_train)}
+        for x, y in zip(X_train, Y_train):
+            class_data[y].append(x)
+
+        imbalanced_class_data = create_imbalance(class_data, imbalance_ratios)
+
+        X_train = []
+        Y_train = []
+        for label, samples in imbalanced_class_data.items():
+            X_train.extend(samples)
+            Y_train.extend([label] * len(samples))
+
+        X_train = np.array(X_train)
+        Y_train = np.array(Y_train)
+    
+    # Apply oversampling to balance the dataset
+    X_train_resampled, Y_train_resampled = oversample_data(X_train, Y_train)
+
+    # Convert to tensors
+    Y_train = torch.tensor(Y_train_resampled, dtype=torch.long)
+    Y_test = torch.tensor(Y_test, dtype=torch.long)
+    #print class distribution
+    print_class_distribution(Y_train_resampled, "training set -oversampled")
+    
+    # Return a Data instance
+    return Data(X_train_resampled, Y_train_resampled, X_test, Y_test, handler, args_task)
+
+import os
+from PIL import Image
+import numpy as np
+from sklearn.utils import resample
+from imblearn.over_sampling import RandomOverSampler
+import random
+
+def create_imbalance(data, imbalance_ratios):
+    """
+    Create an imbalanced dataset by reducing the number of samples for certain classes.
+    
+    Parameters:
+    - data: A dictionary with class labels as keys and lists of samples as values.
+    - imbalance_ratios: A dictionary with class labels as keys and imbalance ratios as values.
+    
+    Returns:
+    - imbalanced_data: A dictionary with the imbalanced dataset.
+    """
+    imbalanced_data = {}
+    for class_label, samples in data.items():
+        if class_label in imbalance_ratios:
+            ratio = imbalance_ratios[class_label]
+            reduced_samples = random.sample(samples, int(len(samples) * ratio))
+            imbalanced_data[class_label] = reduced_samples
+        else:
+            imbalanced_data[class_label] = samples
+    print("Class distribution after imbalance:")
+    for class_label, samples in imbalanced_data.items():
+        print(f"Class {class_label}: {len(samples)} samples")
+    return imbalanced_data
+
+def oversample_data(X, Y):
+    """
+    Oversample the minority classes in the dataset to balance the class distribution.
+    
+    Parameters:
+    - X: List of data samples.
+    - Y: List of labels corresponding to the data samples.
+    
+    Returns:
+    - X_resampled: List of resampled data samples.
+    - Y_resampled: List of resampled labels.
+    """
+
+    # Convert lists to numpy arrays for compatibility with imblearn
+    X = np.array(X)
+    Y = np.array(Y)
+    # Reshape X to 2D array for oversampling
+    X_reshaped = X.reshape((X.shape[0], -1))
+    # Apply RandomOverSampler
+    ros = RandomOverSampler(random_state=42)
+    X_resampled, Y_resampled = ros.fit_resample(X_reshaped, Y)
+    # Reshape X_resampled back to original shape
+    X_resampled = X_resampled.reshape((X_resampled.shape[0],) + X.shape[1:])
+
+    return X_resampled, Y_resampled
+
+
+def undersample_data(X, Y):
+    """
+    Undersample the majority classes in the dataset to balance the class distribution.
+    
+    Parameters:
+    - X: List of data samples.
+    - Y: List of labels corresponding to the data samples.
+    
+    Returns:
+    - X_resampled: List of resampled data samples.
+    - Y_resampled: List of resampled labels.
+    """
+    # Convert lists to numpy arrays for compatibility with imblearn
+    X = np.array(X)
+    Y = np.array(Y)
+    # Reshape X to 2D array for oversampling
+    X_reshaped = X.reshape((X.shape[0], -1))
+    # Apply RandomOverSampler
+    ros = RandomOverSampler(random_state=42)
+    X_resampled, Y_resampled = ros.fit_resample(X_reshaped, Y)
+    # Reshape X_resampled back to original shape
+    X_resampled = X_resampled.reshape((X_resampled.shape[0],) + X.shape[1:])
+
+    return X_resampled, Y_resampled
+
+def get_UCMerced_w_imbalance(handler, args_task, imbalance_ratios, transform=None):
+    """
+    Load the UC Merced dataset, create an imbalanced dataset, and split it into train, validation, and test sets.
+    
+    Parameters:
+    - handler: A function to handle the data transformation.
+    - args_task: Arguments related to the task, including transformations.
+    - imbalance_ratios: A dictionary with class labels as keys and imbalance ratios as values.
+    
+    Returns:
+    - train_data: Training data.
+    - val_data: Validation data.
+    - test_data: Test data.
+    """
+    # Set default transform if not provided
+    if transform is None:
+        transform = transforms.Compose([
+            transforms.Resize((256, 256)),
+            transforms.ToTensor()
+        ])
+
+    # Load the dataset (this is a placeholder, replace with actual loading code)
+    dataset = load_uc_merced_dataset("./data/UCMerced_LandUse/Images/UCMerced_LandUse/Images/")
+    
+    #data = get_UcMerced(handler, args_task)
+    # ---by using get_UcMerced(handler, args_task)---
+    # X_train: Tensor,
+    # Y_train: Tensor,
+    # X_test: Tensor,
+    # Y_test: Tensor,
+    # handler: Any,
+    # args_task: Any
+    # -----------------------------------------------
+    # Split the dataset into classes
+    class_data = {}
+    for sample in dataset:
+        class_label = sample['label']
+        if class_label not in class_data:
+            class_data[class_label] = []
+        class_data[class_label].append(sample)
+    
+    # Create an imbalanced dataset
+    imbalanced_data = create_imbalance(class_data, imbalance_ratios)
+    # Flatten the imbalanced data
+    imbalanced_samples = []
+    for class_label, samples in imbalanced_data.items():
+        imbalanced_samples.extend(samples)
+    
+    # Extract features and labels
+    X = [sample['data'] for sample in imbalanced_samples]
+    Y = [sample['label'] for sample in imbalanced_samples]
+
+     # Apply transformations to ensure consistent image shapes
+    X = [transform(Image.fromarray(x, mode='RGB')).numpy() for x in X]
+    
+    # Split the imbalanced data into train, validation, and test sets
+    X_train, X_temp, Y_train, Y_temp = train_test_split(X, Y, test_size=0.4, random_state=42, stratify=Y)
+    X_val, X_test, Y_val, Y_test = train_test_split(X_temp, Y_temp, test_size=0.5, random_state=42, stratify=Y_temp)
+    
+    print(f"Training set size: {len(X_train)}")
+    print(f"Validation set size: {len(X_val)}")
+    print(f"Test set size: {len(X_test)}")
+    
+    # Convert to numpy arrays and tensors
+    X_train = np.array(X_train)
+    #X_val = np.array(X_val)
+    X_test = np.array(X_test)
+    Y_train = torch.tensor(Y_train)
+    #Y_val = torch.tensor(Y_val)
+    Y_test = torch.tensor(Y_test)
+
+     # Create dataset handlers
+    train_handler = handler(X_train, Y_train, transform)
+    val_handler = handler(X_val, Y_val, transform)
+    test_handler = handler(X_test, Y_test, transform)
+
+    return Data(X_train, Y_train, X_test, Y_test, handler, args_task)
+
+    
+
+def load_uc_merced_dataset(data_path):
+        """
+        Load the UC Merced dataset from the specified path.
+        
+        Parameters:
+        - data_path: Path to the dataset.
+        
+        Returns:
+        - dataset: A list of dictionaries with 'data' and 'label' keys.
+        """
+        dataset = []
+        class_names = sorted(os.listdir(data_path))
+        target_size = (256, 256)
+        
+        for class_idx, class_name in enumerate(class_names):
+            class_dir = os.path.join(data_path, class_name)
+            if os.path.isdir(class_dir):
+                for img_name in os.listdir(class_dir):
+                    img_path = os.path.join(class_dir, img_name)
+                    with Image.open(img_path) as img:
+                        img = img.convert('RGB')
+                        img_array = np.array(img)
+                        if img_array.shape[:2] != target_size:
+                            img_array = resize_image(img_array, target_size)
+                        dataset.append({'data': img_array, 'label': class_idx})
+        print(f"Loaded dataset with {len(dataset)} samples.")
+        return dataset
+    # dataset = []
+    # class_names = sorted(os.listdir(data_path))
+    
+    # for class_idx, class_name in enumerate(class_names):
+    #     class_dir = os.path.join(data_path, class_name)
+    #     if os.path.isdir(class_dir):
+    #         for img_name in os.listdir(class_dir):
+    #             img_path = os.path.join(class_dir, img_name)
+    #             with Image.open(img_path) as img:
+    #                 img = img.convert('RGB')
+    #                 img_array = np.array(img)
+    #                 dataset.append({'data': img_array, 'label': class_idx})
+    
+    # return dataset
 
 
 
 
 
+#############################################################################
+# class CustomUCMerced(UCMerced):
+#     def __init__(self, root, split, transform=None, download=False):
+#         super().__init__(root, split=split, download=download)
+#         self.transform = transform
 
+#     def __getitem__(self, index):
+#         sample = super().__getitem__(index)
+#         image = sample['image']
+#         label = sample['label']
+        
+#         if self.transform:
+#             image = self.transform(image)
+        
+#         return {'image': image, 'label': label}
 
-
-
-
-
-
-
+# def get_UcMerced(handler, args_task):
+#     #trans = transforms.Compose([transforms.Resize([256, 256])])
+#     train_dataset = CustomUCMerced('./data/UCMerced_LandUse/Images/', split='train', download=True)
+#     test_dataset = CustomUCMerced('./data/UCMerced_LandUse/Images/', split='test',  download=True)
+    
+#     print('train_dataset:', (train_dataset))
+#     print('test_dataset:', (test_dataset))

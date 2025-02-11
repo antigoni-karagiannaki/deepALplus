@@ -1,0 +1,13 @@
+dataset: uc_merced
+AL strategy: KCenterGreedy
+number of labeled pool: 100
+number of unlabeled pool: 1160
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+0: 0.634
+1: 0.634
+2: 0.612
+mean acc: 0.6267. std dev acc: 0.0104
+mean time: 20558.0. std dev acc: 371.931

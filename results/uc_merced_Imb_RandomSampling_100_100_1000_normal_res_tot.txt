@@ -1,0 +1,13 @@
+dataset: uc_merced_Imb
+AL strategy: RandomSampling
+number of labeled pool: 100
+number of unlabeled pool: 1304
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+0: 0.617
+1: 0.641
+2: 0.592
+mean acc: 0.6167. std dev acc: 0.02
+mean time: 20134.3333. std dev acc: 231.9976

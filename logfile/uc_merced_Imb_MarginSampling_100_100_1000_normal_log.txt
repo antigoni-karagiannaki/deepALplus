@@ -1,0 +1,36 @@
+uc_merced_Imb
+RANDOM SEED 4666
+MarginSampling
+Round 0
+testing accuracy 0.32954545454545453
+
+
+Round 1
+testing accuracy 0.41761363636363635
+
+
+Round 2
+testing accuracy 0.5994318181818182
+
+
+Round 3
+testing accuracy 0.5965909090909091
+
+
+Round 4
+testing accuracy 0.6903409090909091
+
+
+Round 5
+testing accuracy 0.6619318181818182
+
+
+Round 6
+testing accuracy 0.7613636363636364
+
+
+Round 7
+testing accuracy 0.7471590909090909
+
+
+Round 8

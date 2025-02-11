@@ -1,0 +1,413 @@
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KMeansSampling
+Round 0
+testing accuracy 0.2571428571428571
+
+
+Round 1
+testing accuracy 0.430952380952381
+
+
+Round 2
+testing accuracy 0.5023809523809524
+
+
+Round 3
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KMeansSampling
+Round 0
+testing accuracy 0.2571428571428571
+
+
+Round 1
+testing accuracy 0.430952380952381
+
+
+Round 2
+testing accuracy 0.5023809523809524
+
+
+Round 3
+testing accuracy 0.5928571428571429
+
+
+Round 4
+testing accuracy 0.6261904761904762
+
+
+Round 5
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KMeansSampling
+Round 0
+testing accuracy 0.2571428571428571
+
+
+Round 1
+testing accuracy 0.430952380952381
+
+
+Round 2
+testing accuracy 0.5023809523809524
+
+
+Round 3
+testing accuracy 0.5928571428571429
+
+
+Round 4
+testing accuracy 0.6261904761904762
+
+
+Round 5
+testing accuracy 0.611904761904762
+
+
+Round 6
+testing accuracy 0.6976190476190476
+
+
+Round 7
+testing accuracy 0.6619047619047619
+
+
+Round 8
+testing accuracy 0.7071428571428572
+
+
+Round 9
+testing accuracy 0.7380952380952381
+
+
+Round 10
+testing accuracy 0.7547619047619047
+
+
+SEED 4666
+KMeansSampling
+[0.25714286 0.43095238 0.50238095 0.59285714 0.62619048 0.61190476
+ 0.69761905 0.66190476 0.70714286 0.73809524 0.7547619 ]
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KMeansSampling
+Round 0
+testing accuracy 0.2571428571428571
+
+
+Round 1
+testing accuracy 0.430952380952381
+
+
+Round 2
+testing accuracy 0.5023809523809524
+
+
+Round 3
+testing accuracy 0.5928571428571429
+
+
+Round 4
+testing accuracy 0.6261904761904762
+
+
+Round 5
+testing accuracy 0.611904761904762
+
+
+Round 6
+testing accuracy 0.6976190476190476
+
+
+Round 7
+testing accuracy 0.6619047619047619
+
+
+Round 8
+testing accuracy 0.7071428571428572
+
+
+Round 9
+testing accuracy 0.7380952380952381
+
+
+Round 10
+testing accuracy 0.7547619047619047
+
+
+SEED 4666
+KMeansSampling
+[0.25714286 0.43095238 0.50238095 0.59285714 0.62619048 0.61190476
+ 0.69761905 0.66190476 0.70714286 0.73809524 0.7547619 ]
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KMeansSampling
+Round 0
+testing accuracy 0.30238095238095236
+
+
+Round 1
+testing accuracy 0.3547619047619048
+
+
+Round 2
+testing accuracy 0.5261904761904762
+
+
+Round 3
+testing accuracy 0.5666666666666667
+
+
+Round 4
+testing accuracy 0.5857142857142857
+
+
+Round 5
+testing accuracy 0.6190476190476191
+
+
+Round 6
+testing accuracy 0.65
+
+
+Round 7
+testing accuracy 0.7619047619047619
+
+
+Round 8
+testing accuracy 0.6523809523809524
+
+
+Round 9
+testing accuracy 0.7357142857142858
+
+
+Round 10
+testing accuracy 0.7785714285714286
+
+
+SEED 4666
+KMeansSampling
+[0.30238095 0.3547619  0.52619048 0.56666667 0.58571429 0.61904762
+ 0.65       0.76190476 0.65238095 0.73571429 0.77857143]
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KMeansSampling
+Round 0
+testing accuracy 0.29523809523809524
+
+
+Round 1
+testing accuracy 0.40476190476190477
+
+
+Round 2
+testing accuracy 0.5
+
+
+Round 3
+testing accuracy 0.5571428571428572
+
+
+Round 4
+testing accuracy 0.6095238095238096
+
+
+Round 5
+testing accuracy 0.7023809523809523
+
+
+Round 6
+testing accuracy 0.5476190476190477
+
+
+Round 7
+testing accuracy 0.6428571428571429
+
+
+Round 8
+testing accuracy 0.7261904761904762
+
+
+Round 9
+testing accuracy 0.7333333333333333
+
+
+Round 10
+testing accuracy 0.7238095238095238
+
+
+SEED 4666
+KMeansSampling
+[0.2952381  0.4047619  0.5        0.55714286 0.60952381 0.70238095
+ 0.54761905 0.64285714 0.72619048 0.73333333 0.72380952]
+0: 0.608
+1: 0.599
+2: 0.593
+mean AUBC(acc): 0.6. std dev AUBC(acc): 0.0062
+mean time: 21088.0. std dev time: 3290.4803
+uc_merced
+RANDOM SEED 4600
+KMeansSampling
+Round 0
+testing accuracy 0.21904761904761905
+
+
+Round 1
+testing accuracy 0.44285714285714284
+
+
+Round 2
+testing accuracy 0.5095238095238095
+
+
+Round 3
+testing accuracy 0.5666666666666667
+
+
+Round 4
+testing accuracy 0.5785714285714286
+
+
+Round 5
+testing accuracy 0.7261904761904762
+
+
+Round 6
+testing accuracy 0.669047619047619
+
+
+Round 7
+testing accuracy 0.7285714285714285
+
+
+Round 8
+testing accuracy 0.7309523809523809
+
+
+Round 9
+testing accuracy 0.7309523809523809
+
+
+Round 10
+testing accuracy 0.8285714285714286
+
+
+SEED 4600
+KMeansSampling
+[0.21904762 0.44285714 0.50952381 0.56666667 0.57857143 0.72619048
+ 0.66904762 0.72857143 0.73095238 0.73095238 0.82857143]
+uc_merced
+RANDOM SEED 4600
+KMeansSampling
+Round 0
+testing accuracy 0.24285714285714285
+
+
+Round 1
+testing accuracy 0.34285714285714286
+
+
+Round 2
+testing accuracy 0.5976190476190476
+
+
+Round 3
+testing accuracy 0.5666666666666667
+
+
+Round 4
+testing accuracy 0.6285714285714286
+
+
+Round 5
+testing accuracy 0.6880952380952381
+
+
+Round 6
+testing accuracy 0.6761904761904762
+
+
+Round 7
+testing accuracy 0.7476190476190476
+
+
+Round 8
+testing accuracy 0.7333333333333333
+
+
+Round 9
+testing accuracy 0.7523809523809524
+
+
+Round 10
+testing accuracy 0.6547619047619048
+
+
+SEED 4600
+KMeansSampling
+[0.24285714 0.34285714 0.59761905 0.56666667 0.62857143 0.68809524
+ 0.67619048 0.74761905 0.73333333 0.75238095 0.6547619 ]
+uc_merced
+RANDOM SEED 4600
+KMeansSampling
+Round 0
+testing accuracy 0.2
+
+
+Round 1
+testing accuracy 0.45476190476190476
+
+
+Round 2
+testing accuracy 0.5357142857142857
+
+
+Round 3
+testing accuracy 0.6452380952380953
+
+
+Round 4
+testing accuracy 0.5785714285714286
+
+
+Round 5
+testing accuracy 0.65
+
+
+Round 6
+testing accuracy 0.6833333333333333
+
+
+Round 7
+testing accuracy 0.7380952380952381
+
+
+Round 8
+testing accuracy 0.7880952380952381
+
+
+Round 9
+testing accuracy 0.7833333333333333
+
+
+Round 10
+testing accuracy 0.7309523809523809
+
+
+SEED 4600
+KMeansSampling
+[0.2        0.4547619  0.53571429 0.6452381  0.57857143 0.65
+ 0.68333333 0.73809524 0.78809524 0.78333333 0.73095238]
+0: 0.621
+1: 0.618
+2: 0.632
+mean AUBC(acc): 0.6237. std dev AUBC(acc): 0.006
+mean time: 20994.6667. std dev time: 36.7181

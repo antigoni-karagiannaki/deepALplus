@@ -171,6 +171,60 @@ args_pool = {'MNIST':
 				 'pretrained': True,
 				 'num_class':2,
 				 'optimizer_args':{'lr': 0.0005, 'weight_decay': 1e-5, 'momentum': 0.9}},
+                 
+            'uc_merced':
+				{'n_epoch': 30,   
+				 'name': 'uc_merced', 
+				 'transform_train': transforms.Compose([
+        				transforms.Resize((224, 224)),  # Adjust image size if necessary
+        				transforms.RandomHorizontalFlip(),
+        				transforms.ToTensor(),
+        				transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))  # Adjust normalization values
+    				]),
+				 'transform': transforms.Compose([
+        				transforms.Resize((224, 224)),
+        				transforms.ToTensor(),
+        				transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
+    				]),
+				 'loader_tr_args':{'batch_size': 32, 'num_workers': 2},
+				 'loader_te_args':{'batch_size': 1000, 'num_workers': 4},
+				 'optimizer':'Adam',
+				 'pretrained': False,
+				 'num_class':21,
+				 'optimizer_args':{'lr': 0.001}},  
+            'uc_merced_Imb':
+				{'n_epoch': 30,   
+				 'name': 'uc_merced', 
+				 'transform_train': transforms.Compose([
+        				transforms.Resize((224, 224)),  # Adjust image size if necessary
+        				transforms.RandomHorizontalFlip(),
+        				transforms.ToTensor(),
+        				transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))  # Adjust normalization values
+    				]),
+				 'transform': transforms.Compose([
+        				transforms.Resize((224, 224)),
+        				transforms.ToTensor(),
+        				transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
+    				]),
+				 'loader_tr_args':{'batch_size': 32, 'num_workers': 2},
+				 'loader_te_args':{'batch_size': 1000, 'num_workers': 4},
+				 'optimizer':'Adam',
+				 'pretrained': False,
+				 'num_class':21,
+				 'optimizer_args':{'lr': 0.001}},           
+
+    # 'transform_train': transforms.Compose([
+    #     transforms.Resize((224, 224)),  # Adjust image size if necessary
+    #     transforms.RandomHorizontalFlip(),
+    #     transforms.ToTensor(),
+    #     transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))  # Adjust normalization values
+    # ]),
+    # 'transform': transforms.Compose([
+    #     transforms.Resize((224, 224)),
+    #     transforms.ToTensor(),
+    #     transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
+    # ]),
+    
 			'BreakHis':
 				{'n_epoch': 10,   
 				 'name': 'BreakHis',

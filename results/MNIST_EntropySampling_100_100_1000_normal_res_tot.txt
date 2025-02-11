@@ -1,0 +1,13 @@
+dataset: MNIST
+AL strategy: EntropySampling
+number of labeled pool: 100
+number of unlabeled pool: 59900
+number of testing pool: 10000
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+0: 0.849
+1: 0.833
+2: 0.822
+mean acc: 0.8347. std dev acc: 0.0111
+mean time: 1974.0. std dev acc: 128.6416

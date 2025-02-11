@@ -1,0 +1,213 @@
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KCenterGreedy
+Round 0
+testing accuracy 0.2571428571428571
+
+
+Round 1
+testing accuracy 0.430952380952381
+
+
+Round 2
+testing accuracy 0.5333333333333333
+
+
+Round 3
+testing accuracy 0.5714285714285714
+
+
+Round 4
+testing accuracy 0.7047619047619048
+
+
+Round 5
+testing accuracy 0.6738095238095239
+
+
+Round 6
+testing accuracy 0.6571428571428571
+
+
+Round 7
+testing accuracy 0.7285714285714285
+
+
+Round 8
+testing accuracy 0.7404761904761905
+
+
+Round 9
+testing accuracy 0.8023809523809524
+
+
+Round 10
+testing accuracy 0.7380952380952381
+
+
+SEED 4666
+KCenterGreedy
+[0.25714286 0.43095238 0.53333333 0.57142857 0.7047619  0.67380952
+ 0.65714286 0.72857143 0.74047619 0.80238095 0.73809524]
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KCenterGreedy
+Round 0
+testing accuracy 0.2571428571428571
+
+
+Round 1
+testing accuracy 0.430952380952381
+
+
+Round 2
+testing accuracy 0.5333333333333333
+
+
+Round 3
+testing accuracy 0.5714285714285714
+
+
+Round 4
+testing accuracy 0.7047619047619048
+
+
+Round 5
+testing accuracy 0.6738095238095239
+
+
+Round 6
+testing accuracy 0.6571428571428571
+
+
+Round 7
+testing accuracy 0.7285714285714285
+
+
+Round 8
+testing accuracy 0.7404761904761905
+
+
+Round 9
+testing accuracy 0.8023809523809524
+
+
+Round 10
+testing accuracy 0.7380952380952381
+
+
+SEED 4666
+KCenterGreedy
+[0.25714286 0.43095238 0.53333333 0.57142857 0.7047619  0.67380952
+ 0.65714286 0.72857143 0.74047619 0.80238095 0.73809524]
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KCenterGreedy
+Round 0
+testing accuracy 0.29523809523809524
+
+
+Round 1
+testing accuracy 0.41904761904761906
+
+
+Round 2
+testing accuracy 0.5571428571428572
+
+
+Round 3
+testing accuracy 0.4880952380952381
+
+
+Round 4
+testing accuracy 0.6785714285714286
+
+
+Round 5
+testing accuracy 0.6714285714285714
+
+
+Round 6
+testing accuracy 0.7
+
+
+Round 7
+testing accuracy 0.75
+
+
+Round 8
+testing accuracy 0.7452380952380953
+
+
+Round 9
+testing accuracy 0.7714285714285715
+
+
+Round 10
+testing accuracy 0.8261904761904761
+
+
+SEED 4666
+KCenterGreedy
+[0.2952381  0.41904762 0.55714286 0.48809524 0.67857143 0.67142857
+ 0.7        0.75       0.7452381  0.77142857 0.82619048]
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+KCenterGreedy
+Round 0
+testing accuracy 0.2785714285714286
+
+
+Round 1
+testing accuracy 0.46904761904761905
+
+
+Round 2
+testing accuracy 0.46904761904761905
+
+
+Round 3
+testing accuracy 0.638095238095238
+
+
+Round 4
+testing accuracy 0.6476190476190476
+
+
+Round 5
+testing accuracy 0.6785714285714286
+
+
+Round 6
+testing accuracy 0.6238095238095238
+
+
+Round 7
+testing accuracy 0.6619047619047619
+
+
+Round 8
+testing accuracy 0.7071428571428572
+
+
+Round 9
+testing accuracy 0.7452380952380953
+
+
+Round 10
+testing accuracy 0.6833333333333333
+
+
+SEED 4666
+KCenterGreedy
+[0.27857143 0.46904762 0.46904762 0.63809524 0.64761905 0.67857143
+ 0.62380952 0.66190476 0.70714286 0.7452381  0.68333333]
+0: 0.634
+1: 0.634
+2: 0.612
+mean AUBC(acc): 0.6267. std dev AUBC(acc): 0.0104
+mean time: 20558.0. std dev time: 371.931

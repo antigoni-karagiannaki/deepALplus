@@ -1,0 +1,19 @@
+dataset: uc_merced_Imb
+AL strategy: EntropySampling
+number of labeled pool: 100
+number of unlabeled pool: 1685
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+Size of training set is 100, accuracy is 0.323.
+Size of training set is 200, accuracy is 0.4278.
+Size of training set is 300, accuracy is 0.5198.
+Size of training set is 400, accuracy is 0.5952.
+Size of training set is 500, accuracy is 0.6278.
+Size of training set is 600, accuracy is 0.6778.
+Size of training set is 700, accuracy is 0.704.
+Size of training set is 800, accuracy is 0.777.
+Size of training set is 900, accuracy is 0.75.
+Size of training set is 1000, accuracy is 0.7905.
+Size of training set is 1100, accuracy is 0.7921.

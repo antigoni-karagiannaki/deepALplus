@@ -1,0 +1,45 @@
+{'agricultural': 0, 'airplane': 1, 'baseballdiamond': 2, 'beach': 3, 'buildings': 4, 'chaparral': 5, 'denseresidential': 6, 'forest': 7, 'freeway': 8, 'golfcourse': 9, 'harbor': 10, 'intersection': 11, 'mediumresidential': 12, 'mobilehomepark': 13, 'overpass': 14, 'parkinglot': 15, 'river': 16, 'runway': 17, 'sparseresidential': 18, 'storagetanks': 19, 'tenniscourt': 20}
+uc_merced
+RANDOM SEED 4666
+LeastConfidence
+Round 0
+testing accuracy 0.2571428571428571
+
+
+Round 1
+testing accuracy 0.4142857142857143
+
+
+Round 2
+testing accuracy 0.5142857142857142
+
+
+Round 3
+testing accuracy 0.6047619047619047
+
+
+Round 4
+testing accuracy 0.6547619047619048
+
+
+Round 5
+testing accuracy 0.6595238095238095
+
+
+Round 6
+testing accuracy 0.7523809523809524
+
+
+Round 7
+testing accuracy 0.7214285714285714
+
+
+Round 8
+testing accuracy 0.780952380952381
+
+
+Round 9
+testing accuracy 0.7119047619047619
+
+
+Round 10

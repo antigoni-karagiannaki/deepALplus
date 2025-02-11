@@ -1,0 +1,19 @@
+dataset: uc_merced
+AL strategy: KCenterGreedy
+number of labeled pool: 100
+number of unlabeled pool: 1160
+number of testing pool: 420
+batch size: 100
+quota: 1000
+time of repeat experiments: 3
+Size of training set is 100, accuracy is 0.277.
+Size of training set is 200, accuracy is 0.4397.
+Size of training set is 300, accuracy is 0.5198.
+Size of training set is 400, accuracy is 0.5659.
+Size of training set is 500, accuracy is 0.677.
+Size of training set is 600, accuracy is 0.6746.
+Size of training set is 700, accuracy is 0.6603.
+Size of training set is 800, accuracy is 0.7135.
+Size of training set is 900, accuracy is 0.731.
+Size of training set is 1000, accuracy is 0.773.
+Size of training set is 1100, accuracy is 0.7492.
